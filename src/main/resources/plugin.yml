@@ -1,0 +1,16 @@
+name: BSP${project.name}
+main: ${project.groupId}.endreset.EndReset
+version: ${project.version}
+author: Mats391
+depend: [Multiverse-Core]
+permissions:
+    endreset.reset:
+        description: Allows you to manually reset the end
+        default: op
+commands:
+   resetend:
+      description: Resets the end.
+      usage: /<command>
+      permission: endreset.reset
+      permission-message: You don't have <permission>
+      
